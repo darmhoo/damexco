@@ -4,10 +4,9 @@ import Layout from '../Layouts/Layout.vue';
 <template>
    <Layout>
     <section>
-      <h2>Read our latest articles</h2>
+      <h2 class="text-lg text-blue-700">Read our latest articles</h2>
       <article>
         <div>
-          <img src="/images/kinsta-logo.png" alt="Article thumbnail" />
         </div>
 
         <h3>Title for the blog</h3>

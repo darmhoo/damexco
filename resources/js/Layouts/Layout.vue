@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+    <div class="">
         <header>
             <h1>Damola Inertia</h1>
         </header>
