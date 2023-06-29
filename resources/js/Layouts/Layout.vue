@@ -1,7 +1,7 @@
 <template lang="">
-    <div class="">
+    <div class="container ">
         <header>
-            <h1>Damola Inertia</h1>
+            Welcome, {{user.name}}
         </header>
         <main>
             <slot />
@@ -11,7 +11,12 @@
     </div>
 </template>
 <script setup>
+    import { computed } from 'vue';
+    import { usePage } from '@inertiajs/vue3';
 
+    const page = usePage();
+
+    const user = computed(() => page.props.auth.user)
 </script>
 <style lang="">
     
