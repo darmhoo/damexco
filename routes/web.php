@@ -26,8 +26,21 @@ Route::get('register', function (){
 })->name('register');
 
 Route::get('email/verify', function (){
-    return Inertia::render('Auth/VerifyEmail');
+    return Inertia::render('Auth/VerifyEmail', ['message' => '']);
 })->name('verification.notice');
+
+Route::get('/forgot-password', function (){
+    return Inertia::render('Auth/ForgotPassword');
+})->name('password.request')->middleware('guest');
+
+Route::get('/reset-password/{token}', function (string $token){
+    return Inertia::render('Auth/ResetPassword', ['token' => $token]);
+})->name('password.reset')->middleware('guest');
+
+Route::post('/forgot-password', [AuthController::class, 'forgotPassword'])->name('password.email')->middleware('guest');
+Route::post('/reset-password', [AuthController::class, 'resetPassword'])->name('password.update')->middleware('guest');
+
+
 
 Route::get('email/resend', [AuthController::class, 'resendVerification'])->name('verification.resend');
 

@@ -73,7 +73,7 @@
 						/>
 					</div>
 
-					<div class="mb-6">
+					<div class="mb-2">
 						<button
 							type="submit"
 							class="w-full px-2 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
@@ -81,6 +81,8 @@
 							Submit
 						</button>
 					</div>
+					<a :href="'/login'"><div class="text-center text-sm">Have an account? Login</div></a>
+
 				</form>
 			</div>
 		</div>
