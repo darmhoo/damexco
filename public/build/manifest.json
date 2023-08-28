@@ -1,0 +1,97 @@
+{
+  "_Layout-9cc05f03.js": {
+    "file": "assets/Layout-9cc05f03.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-06deea96.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/Pages/Auth/ForgotPassword.vue": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "file": "assets/ForgotPassword-8c4565c5.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/ForgotPassword.vue"
+  },
+  "resources/js/Pages/Auth/Login.vue": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "file": "assets/Login-77c206f0.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/Login.vue"
+  },
+  "resources/js/Pages/Auth/Register.vue": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "file": "assets/Register-ca373100.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/Register.vue"
+  },
+  "resources/js/Pages/Auth/ResetPassword.vue": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "file": "assets/ResetPassword-c3138e09.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/ResetPassword.vue"
+  },
+  "resources/js/Pages/Auth/VerifyEmail.vue": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "file": "assets/VerifyEmail-38047f86.js",
+    "imports": [
+      "_Layout-9cc05f03.js",
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Auth/VerifyEmail.vue"
+  },
+  "resources/js/Pages/Index.vue": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "file": "assets/Index-42619f94.js",
+    "imports": [
+      "_Layout-9cc05f03.js",
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Index.vue"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-06deea96.css"
+    ],
+    "dynamicImports": [
+      "resources/js/Pages/Auth/ForgotPassword.vue",
+      "resources/js/Pages/Auth/Login.vue",
+      "resources/js/Pages/Auth/Register.vue",
+      "resources/js/Pages/Auth/ResetPassword.vue",
+      "resources/js/Pages/Auth/VerifyEmail.vue",
+      "resources/js/Pages/Index.vue"
+    ],
+    "file": "assets/app-d63880db.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
