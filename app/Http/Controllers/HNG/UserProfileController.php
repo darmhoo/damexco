@@ -18,9 +18,9 @@ class UserProfileController extends Controller
         return response()->json(
             [
                 "slack_name" => $validated['slack_name'],
-                "track" =>$validated['track'],
                 "current_day" => Carbon::now()->dayName,
                 "utc_time" => Carbon::now()->utc(),
+                "track" =>$validated['track'],         
                 "github_file_url" => 'https://github.com/darmhoo/damexco/blob/master/app/Http/Controllers/HNG/UserProfileController.php',
                 "github_repo_url" => 'https://github.com/darmhoo/damexco',
                 "status_code" => 200
