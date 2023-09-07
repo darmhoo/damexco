@@ -19,7 +19,7 @@ class UserProfileController extends Controller
             [
                 "slack_name" => $validated['slack_name'],
                 "current_day" => Carbon::now()->dayName,
-                "utc_time" => Carbon::now()->utc(),
+                "utc_time" => Carbon::now()->toIso8601ZuluString(),
                 "track" =>$validated['track'],         
                 "github_file_url" => 'https://github.com/darmhoo/damexco/blob/master/app/Http/Controllers/HNG/UserProfileController.php',
                 "github_repo_url" => 'https://github.com/darmhoo/damexco',
