@@ -21,8 +21,8 @@ class UserProfileController extends Controller
                 "track" =>$validated['track'],
                 "current_day" => Carbon::now()->dayName,
                 "utc_time" => Carbon::now()->utc(),
-                "github_file_url" => '',
-                "github_repo_url" => '',
+                "github_file_url" => 'https://github.com/darmhoo/damexco/blob/master/app/Http/Controllers/HNG/UserProfileController.php',
+                "github_repo_url" => 'https://github.com/darmhoo/damexco',
                 "status_code" => 200
             ], 200
         );
