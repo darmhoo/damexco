@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HNG\UserProfileController;
+use App\Http\Controllers\HNG\HngUserModelController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', [UserProfileController::class, 'getProfile']);
+Route::resource('person', HngUserModelController::class);
+
