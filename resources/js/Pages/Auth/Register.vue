@@ -9,8 +9,8 @@
 	});
 </script>
 <template>
-	<div class="container mx-auto">
-		<div class="max-w-xl p-5 mx-auto my-10 bg-white rounded-md shadow-sm">
+	<div class="flex flex-col justify-center items-center min-h-screen bg-rose-100">
+		<div class="p-10 bg-white rounded-md shadow-sm md:w-2/5">
 			<div class="text-center">
 				<h1 class="my-3 text-3xl font-semibold text-gray-700">Register</h1>
 			</div>

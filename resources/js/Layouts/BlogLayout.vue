@@ -1,11 +1,6 @@
 <template lang="">
 	<div class="">
-		<header class="b w-full flex justify-between px-5">
-			<h3 class="text-center text-lg font-bold text-slate-100 py-5">Welcome, {{ user.name }}</h3>
-			<nav class="text-center text-lg font-bold text-blue-400 py-5">
-                <a :href="'/logout'">Logout</a>
-            </nav>
-		</header>
+		<BlogHeader />
 		<main>
 			<slot />
 		</main>
@@ -15,6 +10,7 @@
 <script setup>
 	import { computed } from 'vue';
 	import { usePage } from '@inertiajs/vue3';
+    import BlogHeader from '../Components/BlogHeader.vue';
 
 	const page = usePage();
 
