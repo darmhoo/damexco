@@ -5,7 +5,7 @@ namespace App\Actions\Blog;
 use App\Models\Post;
 use Illuminate\Support\Facades\Validator;
 
-class CreateNewPost
+class CreateNewPost 
 {
 
     /**
